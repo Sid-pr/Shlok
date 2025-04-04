@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>काव्य संगम - हिंदी कविताओं का मंच</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>काव्य संगम</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">मुख्य पृष्ठ</a></li>
+                    <li><a href="popular-poems.html">लोकप्रिय कविताएँ</a></li>
+                    <li><a href="#publish">प्रकाशित करें</a></li>
+                    <li><a href="#discover">खोजें</a></li>
+                    <li><a href="beginner-poet.html">प्रारंभिक कवि</a></li>
+                    <li><a href="#about">हमारे बारे में</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="vedic-quote">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            <span class="quote-text">॥ एको अहम् द्वितीयो नास्ति, न भूतो न भविष्यति ॥</span>
+            <span class="quote-source">- ऋग्वेद</span>
+        </marquee>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>अपनी कविता को दुनिया से साझा करें</h1>
+                <p>हिंदी कविता के लिए एक समर्पित मंच, जहां आप अपनी कविताओं को प्रकाशित कर सकते हैं और अन्य कवियों की रचनाओं से प्रेरित हो सकते हैं।</p>
+                <div class="hero-buttons">
+                    <a href="#publish" class="btn primary-btn">कविता प्रकाशित करें</a>
+                    <a href="#discover" class="btn secondary-btn">कविताएँ पढ़ें</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trending" class="trending">
+        <div class="container">
+            <h2 class="section-title">लोकप्रिय कविताएँ</h2>
+            <div class="poem-cards">
+                <div class="poem-card">
+                    <h3>जीवन की राह</h3>
+                    <p class="poet-name">- सुमित शर्मा</p>
+                    <div class="poem-preview">
+                        <p>जीवन की राहें हैं अनोखी,<br>
+                        कभी सुख तो कभी दुःख की होती,<br>
+                        चलते रहना ही जीवन है,<br>
+                        रुकना कहीं मंज़िल नहीं होती।</p>
+                    </div>
+                    <div class="poem-meta">
+                        <span><i class="fas fa-heart icon-heart"></i> 256</span>
+                        <span><i class="fas fa-comment icon-comment"></i> 42</span>
+                        <a href="poem-detail.html" class="read-more">और पढ़ें...</a>
+                    </div>
+                </div>
+                
+                <div class="poem-card">
+                    <h3>बसंत का आगमन</h3>
+                    <p class="poet-name">- अनुराधा पाटिल</p>
+                    <div class="poem-preview">
+                        <p>आ गया बसंत फिर से,<br>
+                        रंग बिरंगे फूलों के संग,<br>
+                        मन मेरा खिल उठा है,<br>
+                        जैसे कली खिलती है पतझड़ के बाद।</p>
+                    </div>
+                    <div class="poem-meta">
+                        <span><i class="fas fa-heart icon-heart"></i> 189</span>
+                        <span><i class="fas fa-comment icon-comment"></i> 35</span>
+                        <a href="poem-detail.html" class="read-more">और पढ़ें...</a>
+                    </div>
+                </div>
+                
+                <div class="poem-card">
+                    <h3>मेरा भारत</h3>
+                    <p class="poet-name">- राजेश गुप्ता</p>
+                    <div class="poem-preview">
+                        <p>संस्कृति की धरोहर है,<br>
+                        मेरा भारत महान,<br>
+                        विविधता में एकता का,<br>
+                        यहाँ मिलता है ज्ञान।</p>
+                    </div>
+                    <div class="poem-meta">
+                        <span><i class="fas fa-heart icon-heart"></i> 312</span>
+                        <span><i class="fas fa-comment icon-comment"></i> 58</span>
+                        <a href="poem-detail.html" class="read-more">और पढ़ें...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="popular-poems.html" class="btn secondary-btn">और कविताएँ देखें</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="publish" class="publish">
+        <div class="container">
+            <h2 class="section-title">अपनी कविता प्रकाशित करें</h2>
+            <div class="publish-content">
+                <form class="publish-form">
+                    <div class="form-group">
+                        <label for="poem-title">कविता का शीर्षक</label>
+                        <input type="text" id="poem-title" placeholder="अपनी कविता का शीर्षक लिखें">
+                    </div>
+                    <div class="form-group">
+                        <label for="poem-content">कविता</label>
+                        <textarea id="poem-content" rows="8" placeholder="अपनी कविता यहाँ लिखें..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="poem-tags">टैग्स</label>
+                        <input type="text" id="poem-tags" placeholder="प्रेम, प्रकृति, देशभक्ति आदि (कॉमा से अलग करें)">
+                    </div>
+                    <button type="submit" class="btn primary-btn">प्रकाशित करें</button>
+                </form>
+                <div class="publish-info">
+                    <div class="info-card">
+                        <h3>कविता प्रकाशित करने के नियम</h3>
+                        <ul>
+                            <li>कविता मौलिक होनी चाहिए</li>
+                            <li>अश्लील या आपत्तिजनक सामग्री न हो</li>
+                            <li>अधिकतम 500 शब्द</li>
+                            <li>उचित शीर्षक और टैग जरूर दें</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discover" class="discover">
+        <div class="container">
+            <h2 class="section-title">कविताएँ खोजें</h2>
+            <div class="discover-search">
+                <input type="text" placeholder="कवि या कविता खोजें...">
+                <button class="search-btn">खोजें</button>
+            </div>
+            <div class="discover-categories">
+                <h3>श्रेणियाँ</h3>
+                <div class="category-tags">
+                    <a href="#" class="category-tag">प्रेम</a>
+                    <a href="#" class="category-tag">प्रकृति</a>
+                    <a href="#" class="category-tag">देशभक्ति</a>
+                    <a href="#" class="category-tag">अध्यात्म</a>
+                    <a href="#" class="category-tag">जीवन</a>
+                    <a href="#" class="category-tag">समाज</a>
+                    <a href="#" class="category-tag">फिल्मी</a>
+                    <a href="#" class="category-tag">दोहे</a>
+                </div>
+            </div>
+            <div class="featured-poets">
+                <h3>प्रमुख कवि</h3>
+                <div class="poet-avatars">
+                    <div class="poet-avatar">
+                        <img src="https://via.placeholder.com/60" alt="कवि 1">
+                        <span>सुरेश मिश्रा</span>
+                    </div>
+                    <div class="poet-avatar">
+                        <img src="https://via.placeholder.com/60" alt="कवि 2">
+                        <span>अंजलि वर्मा</span>
+                    </div>
+                    <div class="poet-avatar">
+                        <img src="https://via.placeholder.com/60" alt="कवि 3">
+                        <span>प्रकाश राज</span>
+                    </div>
+                    <div class="poet-avatar">
+                        <img src="https://via.placeholder.com/60" alt="कवि 4">
+                        <span>दीपा शर्मा</span>
+                    </div>
+                    <div class="poet-avatar">
+                        <img src="https://via.placeholder.com/60" alt="कवि 5">
+                        <span>विनोद कुमार</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">हमारे बारे में</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>काव्य संगम एक ऐसा मंच है जहां हिंदी के कवि अपनी कविताओं को साझा कर सकते हैं और एक दूसरे से सीख सकते हैं। हमारा उद्देश्य हिंदी कविता को बढ़ावा देना और नए कवियों को प्रोत्साहित करना है।</p>
+                    <p>हम मानते हैं कि हर व्यक्ति के अंदर एक कवि छिपा होता है, और हम आपको अपनी भावनाओं और विचारों को कविता के माध्यम से व्यक्त करने का अवसर प्रदान करते हैं।</p>
+                    <div class="mission">
+                        <h3>हमारा लक्ष्य</h3>
+                        <ul>
+                            <li>हिंदी कविता को विश्व स्तर पर पहचान दिलाना</li>
+                            <li>नए कवियों को प्रोत्साहित करना</li>
+                            <li>साहित्य के प्रति रुचि बढ़ाना</li>
+                            <li>भारतीय संस्कृति और भाषा का संरक्षण</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>संपर्क फॉर्म</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="आपका नाम">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="ईमेल">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="आपका संदेश..."></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">भेजें</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>काव्य संगम</h2>
+                    <p>हिंदी कविता का मंच</p>
+                </div>
+                <div class="footer-links">
+                    <h3>त्वरित लिंक</h3>
+                    <ul>
+                        <li><a href="#">मुख्य पृष्ठ</a></li>
+                        <li><a href="popular-poems.html">लोकप्रिय कविताएँ</a></li>
+                        <li><a href="#publish">प्रकाशित करें</a></li>
+                        <li><a href="#discover">खोजें</a></li>
+                        <li><a href="beginner-poet.html">प्रारंभिक कवि</a></li>
+                        <li><a href="#about">हमारे बारे में</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>हमें फॉलो करें</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 काव्य संगम - सभी अधिकार सुरक्षित</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

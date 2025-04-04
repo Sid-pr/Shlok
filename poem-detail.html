@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मधुशाला - हरिवंश राय बच्चन | काव्य संगम</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="poem-detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="poem-detail-body">
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>काव्य संगम</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">मुख्य पृष्ठ</a></li>
+                    <li><a href="popular-poems.html">लोकप्रिय कविताएँ</a></li>
+                    <li><a href="index.html#publish">प्रकाशित करें</a></li>
+                    <li><a href="index.html#discover">खोजें</a></li>
+                    <li><a href="beginner-poet.html">प्रारंभिक कवि</a></li>
+                    <li><a href="index.html#about">हमारे बारे में</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="poem-full-content">
+        <div class="container">
+            <div class="poem-header">
+                <a href="javascript:history.back()" class="back-btn"><i class="fas fa-arrow-left"></i> वापस जाएँ</a>
+                <div class="poem-actions">
+                    <button id="read-aloud-btn" class="action-btn"><i class="fas fa-volume-up"></i> कविता सुनें</button>
+                    <button id="toggle-music-btn" class="action-btn"><i class="fas fa-music"></i> ध्यान संगीत</button>
+                    <button id="download-btn" class="action-btn"><i class="fas fa-download"></i> डाउनलोड करें</button>
+                    <button id="share-btn" class="action-btn"><i class="fas fa-share-alt"></i> शेयर करें</button>
+                </div>
+            </div>
+            
+            <div class="poem-container">
+                <h1 class="poem-title">मधुशाला</h1>
+                <div class="poem-author">
+                    <span class="author-name">हरिवंश राय बच्चन</span>
+                    <span class="publish-date">1935</span>
+                </div>
+                
+                <!-- Album/Collection Navigation -->
+                <div class="poem-album-info">
+                    <span class="album-badge" id="collection-badge">काव्य संग्रह: मधुशाला</span>
+                    <div class="album-nav">
+                        <button class="prev-poem" id="prev-poem"><i class="fas fa-chevron-left"></i> पिछला</button>
+                        <span class="poem-position">1/8</span>
+                        <button class="next-poem" id="next-poem">अगला <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <div class="poem-text" id="poem-content">
+                    <p>मदिरालय जाने को घर से चलता है पीनेवाला,<br>
+                    'किस पथ से जाऊँ?' असमंजस में है वह भोला-भाला;<br>
+                    अलग-अलग पथ बतलाते सब पर मैं यह बतलाता हूँ-<br>
+                    'राह पकड़ तू एक चला चल, पा जाएगा मधुशाला।'</p>
+                    
+                    <p>यह मधुशाला आम नहीं है, यह मधुशाला आम नहीं है,<br>
+                    रवि का कर सुरभित, चंदा की किरनों का प्याला,<br>
+                    अनजाने ही पीने वाले, अनजाने ही पीनेवाले,<br>
+                    कवि-कल्पना की हलचल से, मधु का हिलना है भाला;</p>
+                    
+                    <p>मेरे अविचल अनुराग-भरे मन-मंदिर का है यह प्याला,<br>
+                    मेरे उर की आरती से जगमग, जगमग मधुशाला,<br>
+                    मदिरा है कवि के उद्गारों की तरल तरंग रसधारा,<br>
+                    हाला है कवि के हृदय की फूटी हुंकारों की हाला।</p>
+                    
+                    <p>जब हाथ पकड़ कर मैंने तुमको मधुघट दिया दिखाला,<br>
+                    तब तुमने ही सबसे पहले अपनी ओठों से छूकर प्याला<br>
+                    मधु से भी मधुर मधु के प्याले को बना दिया मधुवाला,<br>
+                    पीनेवाले को, पीनेवाले को, प्याला देती मधुशाला।</p>
+                    
+                    <p>मुझको अपना बनाने वाली मेरी प्यारी मधुशाला,<br>
+                    जिसने मेरी प्यास बुझाई, मेरे तन-मन की ज्वाला,<br>
+                    लौटा दी फिर से मुझको मेरे बचपन की हंसी रूलाई,<br>
+                    मधुशाला के द्वारों पर आकर जला दिए ज्ञान के दिवाला।</p>
+                    
+                    <p>उन्मत्त हुआ तब, जगत भूल कर, छोड़ा घर-बार स्वजन सारा,<br>
+                    स्वागत हित आतुर, बाँहें पसरे, खड़ी हुई मधुशाला,<br>
+                    मैं विकल-हृदय, सन्यासी- सा, मानवता के शोर से भाग,<br>
+                    कुछ शांति मिली तब भव-बाधा, विश्राम मिला कुछ काला।</p>
+                </div>
+                
+                <div class="poem-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-heart"></i>
+                        <span>1,256 पसंद</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-eye"></i>
+                        <span>5,432 बार देखा गया</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-comment"></i>
+                        <span>173 टिप्पणियाँ</span>
+                    </div>
+                </div>
+                
+                <div class="poem-tags">
+                    <span class="tag">दार्शनिक</span>
+                    <span class="tag">क्लासिक</span>
+                    <span class="tag">छायावाद</span>
+                    <span class="tag">जीवन</span>
+                </div>
+                
+                <!-- Bhavarth Section -->
+                <div class="poem-bhavarth">
+                    <div class="bhavarth-header">
+                        <h3><i class="fas fa-lightbulb"></i> भावार्थ</h3>
+                        <button class="toggle-bhavarth"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="bhavarth-content">
+                        <p>"मधुशाला" हरिवंश राय बच्चन जी की सर्वाधिक चर्चित और प्रसिद्ध रचना है, जिसमें उन्होंने मधुशाला (शराबखाना) और उससे जुड़े प्रतीकों का प्रयोग कर जीवन के दार्शनिक पहलुओं को उजागर किया है।</p>
+                        
+                        <p>इस कविता में प्रयुक्त प्रतीक:</p>
+                        <ul>
+                            <li><strong>मधुशाला:</strong> आध्यात्मिक आनंद या मोक्ष का प्रतीक</li>
+                            <li><strong>मदिरा/हाला:</strong> ज्ञान, सत्य और अनुभूति का प्रतीक</li>
+                            <li><strong>प्याला:</strong> मनुष्य का हृदय या मन</li>
+                            <li><strong>पीनेवाला/मधुवाला:</strong> साधक या जिज्ञासु</li>
+                            <li><strong>साकी:</strong> गुरु या ईश्वर का प्रतीक</li>
+                        </ul>
+                        
+                        <p>पहली पंक्ति में बच्चन जी कहते हैं कि जीवन-पथ पर चलने वाला मनुष्य भ्रमित होता है कि किस मार्ग से जाए, लेकिन कवि का संदेश है कि सभी मार्ग एक ही स्थान पर पहुँचाते हैं। यह जीवन की एकता और विभिन्न धर्मों के एक ही लक्ष्य की ओर संकेत करता है।</p>
+                        
+                        <p>आगे की पंक्तियों में कवि बताते हैं कि यह कोई साधारण मधुशाला नहीं है, अपितु एक आध्यात्मिक अनुभूति है जहाँ कवि की कल्पना और भावनाएँ मदिरा के रूप में प्रवाहित होती हैं। मधुशाला में प्रवेश करने का अर्थ है - अपने आध्यात्मिक लक्ष्य की प्राप्ति के लिए समर्पित होना।</p>
+                        
+                        <p>इस कविता में बच्चन जी ने रूढ़िवादी मान्यताओं से मुक्ति और आध्यात्मिक आनंद की प्राप्ति का संदेश दिया है। "मधुशाला के द्वारों पर आकर जला दिए ज्ञान के दिवाला" - इस पंक्ति का अर्थ है कि जब सच्ची अनुभूति होती है, तो पुस्तकीय ज्ञान की सीमाएँ समाप्त हो जाती हैं।</p>
+                        
+                        <p>समग्र रूप से "मधुशाला" एक रूपक काव्य है जो हमें बताती है कि जीवन का सार आनंद और मुक्ति में है, जिसे विभिन्न मार्गों से प्राप्त किया जा सकता है।</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Page Turn Effect Container -->
+            <div class="page-turn-container" id="page-turn-container">
+                <div class="page current-page" id="current-page">
+                    <!-- Current page content (copied from poem-content) -->
+                </div>
+                <div class="page next-page" id="next-page">
+                    <!-- Next page content loaded via JS -->
+                </div>
+            </div>
+            
+            <div class="poem-comments">
+                <h3>टिप्पणियाँ (173)</h3>
+                <div class="add-comment">
+                    <textarea placeholder="अपनी टिप्पणी लिखें..."></textarea>
+                    <button class="btn primary-btn">पोस्ट करें</button>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://via.placeholder.com/50" alt="प्रतिक्रिया देने वाले का चित्र">
+                    </div>
+                    <div class="comment-content">
+                        <h4>अनिल शर्मा <span class="comment-date">2 दिन पहले</span></h4>
+                        <p>मधुशाला हिंदी साहित्य का एक अनमोल रत्न है। बच्चन जी की कल्पना और उनके शब्द विन्यास का कमाल है कि इतने वर्षों बाद भी यह कविता उतनी ही प्रासंगिक है।</p>
+                        <div class="comment-actions">
+                            <a href="#"><i class="fas fa-heart"></i> पसंद (45)</a>
+                            <a href="#"><i class="fas fa-reply"></i> जवाब दें</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://via.placeholder.com/50" alt="प्रतिक्रिया देने वाले का चित्र">
+                    </div>
+                    <div class="comment-content">
+                        <h4>रेखा गुप्ता <span class="comment-date">4 दिन पहले</span></h4>
+                        <p>मधुशाला में बच्चन जी ने आध्यात्मिक संदेश को इतने सरल और मधुर शब्दों में व्यक्त किया है। हर बार पढ़ने पर नए अर्थ निकलते हैं।</p>
+                        <div class="comment-actions">
+                            <a href="#"><i class="fas fa-heart"></i> पसंद (32)</a>
+                            <a href="#"><i class="fas fa-reply"></i> जवाब दें</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="more-comments">
+                    <button class="btn secondary-btn">और टिप्पणियाँ देखें</button>
+                </div>
+            </div>
+            
+            <div class="related-poems">
+                <h3>संबंधित कविताएँ</h3>
+                <div class="poem-cards">
+                    <div class="poem-card">
+                        <h3>मधुबाला</h3>
+                        <p class="poet-name">- हरिवंश राय बच्चन</p>
+                        <div class="poem-preview">
+                            <p>जैसे मधुशाला की मदिरा मधु की धारा,<br>
+                            वैसे ही मधुबाला का भी है मधुर पसारा...</p>
+                        </div>
+                        <div class="poem-meta">
+                            <span><i class="fas fa-heart icon-heart"></i> 845</span>
+                            <span><i class="fas fa-comment icon-comment"></i> 76</span>
+                            <a href="poem-detail.html" class="read-more">और पढ़ें...</a>
+                        </div>
+                    </div>
+                    
+                    <div class="poem-card">
+                        <h3>आओ फिर से दिया जलाएं</h3>
+                        <p class="poet-name">- हरिवंश राय बच्चन</p>
+                        <div class="poem-preview">
+                            <p>भरी दुपहरी में अँधियारा,<br>
+                            सूरज पर कैसा यह ग्रहण लगा?<br>
+                            काजल की कोठरी में अटके...</p>
+                        </div>
+                        <div class="poem-meta">
+                            <span><i class="fas fa-heart icon-heart"></i> 892</span>
+                            <span><i class="fas fa-comment icon-comment"></i> 102</span>
+                            <a href="poem-detail.html" class="read-more">और पढ़ें...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>काव्य संगम</h2>
+                    <p>हिंदी कविता का मंच</p>
+                </div>
+                <div class="footer-links">
+                    <h3>त्वरित लिंक</h3>
+                    <ul>
+                        <li><a href="index.html">मुख्य पृष्ठ</a></li>
+                        <li><a href="popular-poems.html">लोकप्रिय कविताएँ</a></li>
+                        <li><a href="index.html#publish">प्रकाशित करें</a></li>
+                        <li><a href="index.html#discover">खोजें</a></li>
+                        <li><a href="beginner-poet.html">प्रारंभिक कवि</a></li>
+                        <li><a href="index.html#about">हमारे बारे में</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>हमें फॉलो करें</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 काव्य संगम - सभी अधिकार सुरक्षित</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Audio Elements -->
+    <audio id="meditation-sound" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+    <script src="poem-detail.js"></script>
+</body>
+</html> 

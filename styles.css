@@ -1,0 +1,939 @@
+/* 
+  Color Palette inspired by Indian culture:
+  - Saffron (#FF9933): Represents courage and sacrifice
+  - Navy Blue (#000080): Represents truth, peace, and prosperity
+  - Green (#138808): Represents faith and fertility
+  - Maroon (#800000): Represents the earth and auspiciousness 
+  - Gold (#FFD700): Represents prosperity and spiritual light
+*/
+
+:root {
+    --saffron: #FF9933;
+    --navy-blue: #000080;
+    --green: #138808;
+    --maroon: #800000;
+    --gold: #FFD700;
+    --light-gold: #FFF0D1;
+    --cream: #FFF8E7;
+    --dark-text: #333333;
+    --light-text: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --medium-gray: #E0E0E0;
+    --border-color: #DDDDDD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    color: var(--dark-text);
+    background-color: var(--cream);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--navy-blue);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--saffron);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--maroon);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--saffron);
+    border-radius: 2px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+}
+
+.primary-btn {
+    background-color: var(--saffron);
+    color: var(--light-text);
+}
+
+.primary-btn:hover {
+    background-color: var(--maroon);
+    color: var(--light-text);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--navy-blue);
+    border: 2px solid var(--navy-blue);
+}
+
+.secondary-btn:hover {
+    background-color: var(--navy-blue);
+    color: var(--light-text);
+}
+
+/* Form Elements */
+input, textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--light-text);
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--saffron);
+    box-shadow: 0 0 0 2px rgba(255, 153, 51, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--maroon);
+}
+
+/* Header */
+header {
+    background-color: var(--light-text);
+    padding: 15px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: var(--maroon);
+    margin-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--saffron);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-text);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?india,culture') no-repeat center center/cover;
+    padding: 120px 0;
+    color: var(--light-text);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Trending Section */
+.trending {
+    padding: 80px 0;
+    background-color: var(--light-text);
+}
+
+.poem-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 3rem;
+}
+
+.poem-card {
+    background-color: var(--light-gold);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.poem-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--saffron);
+}
+
+.poem-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.poem-card h3 {
+    color: var(--maroon);
+    font-size: 1.5rem;
+}
+
+.poet-name {
+    color: var(--navy-blue);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.poem-preview {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.poem-meta {
+    display: flex;
+    align-items: center;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.poem-meta span {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.read-more {
+    margin-left: auto;
+    color: var(--saffron);
+    font-weight: 600;
+}
+
+.view-more {
+    text-align: center;
+}
+
+/* Publish Section */
+.publish {
+    padding: 80px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://source.unsplash.com/1600x900/?india,paper') no-repeat center center/cover;
+}
+
+.publish-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.publish-form {
+    background-color: var(--light-text);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-card {
+    background-color: var(--light-gold);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.info-card ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.info-card ul li::before {
+    content: "•";
+    color: var(--saffron);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+/* Discover Section */
+.discover {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.discover-search {
+    display: flex;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.discover-search input {
+    flex-grow: 1;
+    margin-bottom: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.search-btn {
+    background-color: var(--maroon);
+    color: var(--light-text);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: var(--navy-blue);
+}
+
+.discover-categories {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.discover-categories h3 {
+    margin-bottom: 1.5rem;
+    color: var(--maroon);
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--light-text);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    color: var(--navy-blue);
+    position: relative;
+}
+
+.category-tag:hover {
+    background-color: var(--saffron);
+    color: var(--light-text);
+}
+
+.featured-poets {
+    text-align: center;
+}
+
+.featured-poets h3 {
+    margin-bottom: 1.5rem;
+    color: var(--maroon);
+}
+
+.poet-avatars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.poet-avatar {
+    text-align: center;
+}
+
+.poet-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--saffron);
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--light-gold) 100%);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.mission {
+    margin-top: 2rem;
+}
+
+.mission h3 {
+    color: var(--maroon);
+    margin-bottom: 1rem;
+}
+
+.mission ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.mission ul li::before {
+    content: "•";
+    color: var(--saffron);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.contact-form {
+    background-color: var(--light-text);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h3 {
+    text-align: center;
+    color: var(--maroon);
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--maroon);
+    color: var(--light-text);
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo h2 {
+    color: var(--light-text);
+    margin-bottom: 10px;
+}
+
+.footer-links h3, .footer-social h3 {
+    color: var(--saffron);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--light-text);
+}
+
+.footer-links a:hover {
+    color: var(--saffron);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--light-text);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--saffron);
+    color: var(--light-text);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    
+    .publish-content, .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-card {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--light-text);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-200%);
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    
+    .nav-links li {
+        margin: 1rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .poem-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .discover-search {
+        flex-direction: column;
+    }
+    
+    .discover-search input {
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .search-btn {
+        border-radius: 8px;
+    }
+}
+
+/* Mobile Menu Animation */
+.mobile-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Add a decorative element to section backgrounds */
+.trending::before,
+.discover::before,
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF9933' opacity='0.1'%3E%3Cpath d='M12 1L1 5.5L12 10L23 5.5L12 1ZM1 18.5L12 23L23 18.5V14.5L12 19L1 14.5V18.5ZM1 11.5L12 16L23 11.5V7.5L12 12L1 7.5V11.5Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* Add a tooltip to category tags */
+.category-tag:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: var(--maroon);
+    color: var(--light-text);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.category-tag:hover::before {
+    opacity: 1;
+}
+
+/* Poem card hover animation */
+.poem-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--saffron), var(--maroon));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.poem-card:hover::after {
+    transform: scaleX(1);
+}
+
+/* Popular Poems Page Specific Styles */
+.popular-poems {
+    padding: 60px 0;
+    background-color: var(--cream);
+}
+
+.poet-section {
+    margin-bottom: 50px;
+}
+
+.poet-heading {
+    color: var(--maroon);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.poet-heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 25px;
+    background-color: var(--saffron);
+    border-radius: 3px;
+}
+
+.filter-container {
+    background-color: var(--light-text);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+}
+
+.filter-container h3 {
+    color: var(--maroon);
+    margin-bottom: 15px;
+}
+
+.poet-filter {
+    margin-bottom: 30px;
+}
+
+.poet-filter select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--light-text);
+    color: var(--dark-text);
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.poet-filter select:focus {
+    outline: none;
+    border-color: var(--saffron);
+    box-shadow: 0 0 0 2px rgba(255, 153, 51, 0.2);
+}
+
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--light-gray);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    color: var(--navy-blue);
+}
+
+.filter-tag:hover, .filter-tag.active {
+    background-color: var(--saffron);
+    color: var(--light-text);
+}
+
+/* Pagination Styles */
+.pagination {
+    padding: 30px 0 60px;
+    background-color: var(--cream);
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.page-btn, .page-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 15px;
+    background-color: var(--light-text);
+    border-radius: 8px;
+    color: var(--navy-blue);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.page-number {
+    padding: 0;
+}
+
+.page-btn:hover:not(.disabled), .page-number:hover:not(.active) {
+    background-color: var(--light-gold);
+}
+
+.page-number.active {
+    background-color: var(--saffron);
+    color: var(--light-text);
+}
+
+.page-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.dots {
+    margin: 0 5px;
+}
+
+/* Responsive adjustments for the poem page */
+@media screen and (max-width: 768px) {
+    .filter-container {
+        padding: 20px;
+    }
+    
+    .poet-heading {
+        font-size: 1.5rem;
+    }
+    
+    .pagination-controls {
+        gap: 5px;
+    }
+    
+    .page-btn, .page-number {
+        min-width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Collection/Album Badge for poem cards */
+.collection-badge {
+    display: inline-block;
+    background-color: var(--saffron);
+    color: var(--dark-text);
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+/* Vedic Quote Marquee */
+.vedic-quote {
+    background-color: var(--saffron);
+    padding: 0.6rem 0;
+    color: var(--dark-text);
+    font-family: 'Tiro Devanagari Hindi', serif;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.vedic-quote marquee {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.quote-text {
+    letter-spacing: 0.5px;
+}
+
+.quote-source {
+    opacity: 0.8;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .vedic-quote marquee {
+        font-size: 0.95rem;
+    }
+} 

@@ -1,0 +1,498 @@
+/* Poem Detail Page Specific Styles */
+.poem-detail-body {
+    background: linear-gradient(to bottom, #181835 0%, #2c1b47 50%, #080829 100%);
+    color: #f5f5f5;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Stars background animation */
+.stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: var(--stars-shadow-1);
+    animation: animateStars 50s linear infinite;
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: var(--stars-shadow-2);
+    animation: animateStars 100s linear infinite;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: var(--stars-shadow-3);
+    animation: animateStars 150s linear infinite;
+}
+
+@keyframes animateStars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+/* Header modifications for dark theme */
+.poem-detail-body header {
+    background-color: rgba(20, 20, 40, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.poem-detail-body .logo h1,
+.poem-detail-body .nav-links a {
+    color: var(--light-text);
+}
+
+.poem-detail-body .mobile-menu span {
+    background-color: var(--light-text);
+}
+
+/* Poem Content Styles */
+.poem-full-content {
+    padding: 60px 0;
+}
+
+.poem-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    color: var(--light-text);
+    font-weight: 600;
+    gap: 10px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--saffron);
+}
+
+.poem-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--light-text);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 1rem;
+}
+
+.action-btn:hover {
+    background-color: var(--saffron);
+}
+
+.action-btn.active {
+    background-color: var(--saffron);
+}
+
+.poem-container {
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.poem-title {
+    font-size: 2.8rem;
+    color: var(--saffron);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.poem-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.author-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.publish-date {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.poem-text {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.poem-text p {
+    margin-bottom: 30px;
+}
+
+.poem-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0 20px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.meta-item i {
+    color: var(--saffron);
+}
+
+.poem-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Comments Section */
+.poem-comments {
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.poem-comments h3 {
+    color: var(--saffron);
+    margin-bottom: 20px;
+}
+
+.add-comment {
+    margin-bottom: 30px;
+}
+
+.add-comment textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--light-text);
+    font-family: 'Tiro Devanagari Hindi', serif;
+    margin-bottom: 15px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.add-comment textarea:focus {
+    outline: none;
+    border-color: var(--saffron);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.comment {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.comment-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-content h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.comment-date {
+    font-weight: 400;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.comment-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.comment-actions a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.comment-actions a:hover {
+    color: var(--saffron);
+}
+
+.more-comments {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Related Poems Section */
+.related-poems {
+    margin-bottom: 40px;
+}
+
+.related-poems h3 {
+    color: var(--saffron);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.poem-detail-body .poem-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.poem-detail-body .poem-card h3 {
+    color: var(--saffron);
+}
+
+.poem-detail-body .poet-name {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.poem-detail-body .poem-card::before {
+    background-color: var(--saffron);
+}
+
+.poem-detail-body .read-more {
+    color: var(--saffron);
+}
+
+/* Footer Modifications */
+.poem-detail-body footer {
+    background-color: rgba(20, 15, 30, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Word Highlight for Text-to-Speech */
+.word-highlight {
+    color: var(--saffron);
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .poem-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .poem-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .poem-container {
+        padding: 25px;
+    }
+    
+    .poem-title {
+        font-size: 2rem;
+    }
+    
+    .poem-text {
+        font-size: 1.1rem;
+    }
+    
+    .poem-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .action-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .poem-container {
+        padding: 20px;
+    }
+    
+    .poem-comments {
+        padding: 20px;
+    }
+}
+
+/* Generate star shadows */
+:root {
+    --stars-shadow-1: 1744px 122px #FFF, 134px 1321px #FFF, 92px 859px #FFF, 235px 1045px #FFF, 366px 912px #FFF, 491px 942px #FFF, 14px 1831px #FFF, 582px 476px #FFF, 588px 1230px #FFF, 1520px 1343px #FFF, 1671px 203px #FFF, 1959px 1293px #FFF, 1677px 1238px #FFF, 1084px 761px #FFF, 1771px 825px #FFF, 1116px 1526px #FFF, 939px 1058px #FFF, 1090px 504px #FFF, 1788px 1793px #FFF, 1589px 642px #FFF, 1764px 644px #FFF, 587px 908px #FFF, 1622px 1387px #FFF, 1858px 1066px #FFF, 1715px 1760px #FFF, 1099px 366px #FFF, 1290px 1071px #FFF, 1176px 1022px #FFF, 1449px 1433px #FFF, 488px 891px #FFF, 283px 1786px #FFF, 1961px 1778px #FFF, 1468px 856px #FFF, 1892px 500px #FFF, 1618px 1571px #FFF, 1831px 1830px #FFF, 187px 859px #FFF, 1357px 1236px #FFF, 929px 1646px #FFF, 1808px 1129px #FFF, 1192px 1306px #FFF, 1453px 1672px #FFF, 1027px 839px #FFF, 1932px 251px #FFF, 32px 616px #FFF, 1541px 1507px #FFF, 1593px 1253px #FFF, 1404px 241px #FFF, 84px 683px #FFF, 1129px 1485px #FFF, 1630px 1378px #FFF, 698px 350px #FFF, 368px 282px #FFF, 1855px 281px #FFF, 819px 975px #FFF, 1075px 975px #FFF, 1991px 406px #FFF, 906px 1012px #FFF, 1055px 1022px #FFF, 66px 1026px #FFF, 527px 1427px #FFF, 363px 1084px #FFF, 1701px 1204px #FFF, 1726px 1725px #FFF, 1357px 282px #FFF, 1751px 329px #FFF, 1044px 1227px #FFF, 1879px 779px #FFF, 1809px 176px #FFF, 1828px 15px #FFF, 1267px 1358px #FFF, 1956px 490px #FFF, 1948px 489px #FFF, 602px 1594px #FFF, 1030px 719px #FFF, 1920px 1364px #FFF, 1393px 1302px #FFF, 1926px 393px #FFF, 1442px 1467px #FFF, 1917px 1886px #FFF, 1650px 1883px #FFF, 1975px 1831px #FFF, 1280px 795px #FFF, 1429px 1278px #FFF, 1080px 1259px #FFF, 1037px 1099px #FFF;
+    
+    --stars-shadow-2: 1530px 535px #FFF, 1415px 729px #FFF, 1795px 1133px #FFF, 871px 1105px #FFF, 1737px 781px #FFF, 1347px 596px #FFF, 510px 481px #FFF, 1231px 891px #FFF, 223px 995px #FFF, 691px 1184px #FFF, 1429px 485px #FFF, 1571px 1424px #FFF, 1914px 64px #FFF, 82px 401px #FFF, 795px 1263px #FFF, 1119px 38px #FFF, 810px 1754px #FFF, 254px 776px #FFF, 1810px 21px #FFF, 76px 1081px #FFF, 132px 1204px #FFF, 1070px 275px #FFF, 206px 218px #FFF, 1745px 1183px #FFF, 1420px 1431px #FFF, 1074px 256px #FFF, 1863px 884px #FFF, 985px 702px #FFF, 1758px 847px #FFF, 1438px 576px #FFF, 1059px 1753px #FFF, 1010px 1009px #FFF, 431px 1862px #FFF, 1872px 337px #FFF, 1904px 1785px #FFF, 175px 211px #FFF, 890px 1151px #FFF, 1095px 1484px #FFF, 1701px 1591px #FFF, 1432px 263px #FFF;
+    
+    --stars-shadow-3: 233px 890px #FFF, 1789px 807px #FFF, 1177px 505px #FFF, 1186px 225px #FFF, 1825px 151px #FFF, 446px 1762px #FFF, 571px 1197px #FFF, 1250px 1032px #FFF, 1597px 646px #FFF, 1281px 1253px #FFF, 1416px 1156px #FFF, 1123px 706px #FFF, 1782px 1352px #FFF, 1302px 1979px #FFF, 1459px 526px #FFF, 1931px 1888px #FFF, 1033px 1557px #FFF, 1389px 1590px #FFF, 760px 1079px #FFF, 1642px 325px #FFF, 1543px 1079px #FFF, 876px 627px #FFF, 1447px 748px #FFF, 884px 1276px #FFF, 1364px 1582px #FFF, 1139px 65px #FFF, 1411px 1044px #FFF, 358px 1153px #FFF, 1598px 1300px #FFF, 1685px 70px #FFF;
+}
+
+/* Bhavarth (Essence/Meaning) Section */
+.poem-bhavarth {
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-left: 4px solid var(--saffron);
+}
+
+.bhavarth-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+    cursor: pointer;
+}
+
+.bhavarth-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.bhavarth-header h3 i {
+    margin-right: 0.5rem;
+    color: var(--saffron);
+}
+
+.toggle-bhavarth {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-bhavarth.active {
+    transform: rotate(180deg);
+}
+
+.bhavarth-content {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.bhavarth-content.active {
+    padding: 1.5rem;
+    max-height: 2000px; /* Arbitrary large value */
+}
+
+.bhavarth-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--secondary-text);
+}
+
+.bhavarth-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.bhavarth-content li {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+.bhavarth-content strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .bhavarth-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .bhavarth-content {
+        padding: 0 1rem;
+    }
+    
+    .bhavarth-content.active {
+        padding: 1rem;
+    }
+} 

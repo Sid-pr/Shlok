@@ -1,0 +1,385 @@
+/* Beginner Poet Page Specific Styles */
+
+/* Hero Section */
+.beginner-hero {
+    background: linear-gradient(to right, #2b1542, #6b3a80);
+    padding: 100px 0 80px;
+    text-align: center;
+    color: var(--light-text);
+}
+
+.beginner-hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: var(--saffron);
+}
+
+.beginner-hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Guide Section */
+.beginner-guide {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.guide-section {
+    margin-bottom: 60px;
+}
+
+.guide-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.guide-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.guide-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(103, 58, 183, 0.1);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card-icon i {
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.guide-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-text);
+}
+
+.guide-card p {
+    margin-bottom: 20px;
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+.guide-card .read-more {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Poetry Types */
+.poetry-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.poetry-type {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.poetry-type h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.poetry-type p {
+    margin-bottom: 20px;
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+.example {
+    background-color: rgba(103, 58, 183, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.example strong {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.example p {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* Practice Exercises */
+.practice-exercises {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.exercise h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.exercise p {
+    margin-bottom: 20px;
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+.exercise-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.exercise-list li {
+    margin-bottom: 10px;
+    color: var(--secondary-text);
+}
+
+/* Feedback Section */
+.feedback-section {
+    padding: 80px 0;
+    background-color: var(--light-accent-bg);
+}
+
+.feedback-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.feedback-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-form .form-group {
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark-text);
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.feedback-form button {
+    margin-top: 10px;
+}
+
+.feedback-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.info-card p {
+    margin-bottom: 20px;
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+.feedback-points {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback-points li {
+    margin-bottom: 10px;
+    color: var(--secondary-text);
+}
+
+.note {
+    font-style: italic;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Community Section */
+.community-section {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.community-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.community-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+}
+
+.community-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+    color: var(--dark-text);
+}
+
+.feature p {
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+.join-community {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .feedback-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .beginner-hero-content h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .beginner-hero {
+        padding: 80px 0 60px;
+    }
+    
+    .beginner-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .guide-section h2,
+    .feedback-section h2,
+    .community-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .guide-cards,
+    .poetry-types,
+    .community-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .feedback-form {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .beginner-hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .beginner-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+} 

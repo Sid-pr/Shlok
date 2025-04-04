@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>रश्मिरथी - रामधारी सिंह 'दिनकर' | काव्य संगम</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="poem-detail.css">
+    <link rel="stylesheet" href="poem-album.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="poem-detail-body">
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>काव्य संगम</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">मुख्य पृष्ठ</a></li>
+                    <li><a href="popular-poems.html">लोकप्रिय कविताएँ</a></li>
+                    <li><a href="index.html#publish">प्रकाशित करें</a></li>
+                    <li><a href="index.html#discover">खोजें</a></li>
+                    <li><a href="beginner-poet.html">प्रारंभिक कवि</a></li>
+                    <li><a href="index.html#about">हमारे बारे में</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="poem-full-content">
+        <div class="container">
+            <div class="poem-header">
+                <a href="javascript:history.back()" class="back-btn"><i class="fas fa-arrow-left"></i> वापस जाएँ</a>
+                <div class="poem-actions">
+                    <button id="read-aloud-btn" class="action-btn"><i class="fas fa-volume-up"></i> कविता सुनें</button>
+                    <button id="toggle-music-btn" class="action-btn"><i class="fas fa-music"></i> ध्यान संगीत</button>
+                    <button id="download-btn" class="action-btn"><i class="fas fa-download"></i> डाउनलोड करें</button>
+                    <button id="share-btn" class="action-btn"><i class="fas fa-share-alt"></i> शेयर करें</button>
+                </div>
+            </div>
+            
+            <div class="poem-container" id="main-poem-container">
+                <h1 class="poem-title">रश्मिरथी</h1>
+                <div class="poem-author">
+                    <span class="author-name">रामधारी सिंह 'दिनकर'</span>
+                    <span class="publish-date">1952</span>
+                </div>
+                
+                <!-- Album/Collection Navigation -->
+                <div class="poem-album-info">
+                    <span class="album-badge" id="collection-badge">महाकाव्य: रश्मिरथी</span>
+                    <div class="album-nav">
+                        <button class="prev-poem" id="prev-poem" disabled><i class="fas fa-chevron-left"></i> पिछला सर्ग</button>
+                        <span class="poem-position">सर्ग 1/9</span>
+                        <button class="next-poem" id="next-poem">अगला सर्ग <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <div class="poem-text" id="poem-content">
+                    <p>अरुण यह मधुमय देश हमारा<br>
+                    जहाँ पहुँच अनजान क्षितिज को मिलता एक सहारा<br>
+                    सरस तामरस गर्भ विभा पर नाच रही तरुशिखा मनोहर<br>
+                    छिटका जीवन हरियाली पर मंगल कुमकुम सारा</p>
+
+                    <p>जिसके पुण्य पुरातन अंकों में चित्रित आदि सृजन के<br>
+                    अंकुर फूटते नव नव जीवन के, खिलते सुमन मनोहर<br>
+                    जिसे शत शत आकांक्षाओं से भरकर प्रकृति सँवारती है<br>
+                    जिसके कण कण में सुशोभित पार्थिव वैभव सारा!</p>
+
+                    <p>मदकिरण से चूमे जाते वाले रुचिर लतागृहों के अंदर<br>
+                    विकसित व्योम भावना के पुष्प उठाए हैं मुख बाहर<br>
+                    प्रभा विद्युत छाया में अटके हुए अनिल में सुख के हिंडोले<br>
+                    दुःख के दावानल में उसकी है लगी जलन चिनगारी!</p>
+
+                    <p>तोड़ प्रकृति के जड़ बंधन को देख कर्म के उन्मुक्त गगन में<br>
+                    मुक्ति पथ पर बढ़ते जाते वहाँ बंधु हैं पटु विचरण किए<br>
+                    संचित, शोषित, सिंचित पवन में, पुलकित कर ले कुसुम सुरभि को<br>
+                    भावों के प्रतिकूल अनुकूल से सीखा है संघर्ष किए!</p>
+                </div>
+                
+                <div class="poem-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-heart"></i>
+                        <span>1,358 पसंद</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-eye"></i>
+                        <span>4,976 बार देखा गया</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-comment"></i>
+                        <span>189 टिप्पणियाँ</span>
+                    </div>
+                </div>
+                
+                <div class="poem-tags">
+                    <span class="tag">महाकाव्य</span>
+                    <span class="tag">देशभक्ति</span>
+                    <span class="tag">कर्ण</span>
+                    <span class="tag">महाभारत</span>
+                </div>
+                
+                <!-- Bhavarth Section -->
+                <div class="poem-bhavarth">
+                    <div class="bhavarth-header">
+                        <h3><i class="fas fa-lightbulb"></i> भावार्थ</h3>
+                        <button class="toggle-bhavarth"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="bhavarth-content">
+                        <p>"रश्मिरथी" दिनकर जी द्वारा रचित एक महत्वपूर्ण काव्य है जो महाभारत के पात्र कर्ण के जीवन और संघर्ष को केंद्र में रखकर लिखा गया है। इस काव्य में कर्ण के माध्यम से समाज में व्याप्त जातिवाद, भेदभाव और मानवीय संघर्ष का मार्मिक चित्रण किया गया है।</p>
+                        
+                        <p>रश्मिरथी का प्रथम सर्ग:</p>
+                        <ul>
+                            <li><strong>भारत भूमि का गुणगान:</strong> काव्य का प्रारंभ भारत के प्राकृतिक सौंदर्य और गौरवशाली इतिहास के वर्णन से होता है</li>
+                            <li><strong>सूर्य पुत्र:</strong> कर्ण सूर्य पुत्र के रूप में वर्णित है, जिसका रथ सूर्य किरणों का बना है (रश्मिरथी)</li>
+                            <li><strong>संघर्ष का प्रतीक:</strong> दुःख और संघर्ष के बीच उत्साह और साहस का प्रतीक</li>
+                        </ul>
+                        
+                        <p>प्रथम पंक्ति "अरुण यह मधुमय देश हमारा" में कवि भारत की प्रशंसा करते हुए इसे सूर्योदय के समान उज्जवल और मधुर देश बताते हैं। यह वर्णन भारत के अतीत के गौरव और उज्जवल भविष्य का प्रतीक है।</p>
+                        
+                        <p>कर्ण के जीवन से प्रेरणा के मुख्य बिंदु:</p>
+                        <ul>
+                            <li>जन्मजात भेदभाव के बावजूद अपनी योग्यता के बल पर उन्नति</li>
+                            <li>अपने कर्तव्य और वचन के प्रति अडिग निष्ठा</li>
+                            <li>दान और उदारता का आदर्श</li>
+                            <li>व्यक्ति का मूल्यांकन उसके जन्म नहीं, कर्म से होना चाहिए</li>
+                        </ul>
+                        
+                        <p>दिनकर जी इस काव्य के माध्यम से समाज में व्याप्त अन्याय, जातिगत भेदभाव और सामाजिक विषमता पर प्रहार करते हैं और एक ऐसे समाज की कल्पना करते हैं जहाँ व्यक्ति का मूल्यांकन उसके कर्मों से हो, न कि जन्म से।</p>
+                        
+                        <p>समग्र रूप से "रश्मिरथी" न केवल कर्ण के जीवन का वर्णन है, बल्कि समाज सुधार का एक माध्यम भी है जो आज भी उतना ही प्रासंगिक है जितना रचना के समय था।</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Page Turn Effect Container -->
+            <div class="page-turn-container" id="page-turn-container">
+                <div class="page current-page" id="current-page">
+                    <!-- Current page content (copied from poem-content) -->
+                </div>
+                <div class="page next-page" id="next-page">
+                    <!-- Next page content loaded via JS -->
+                </div>
+            </div>
+            
+            <div class="poem-comments">
+                <h3>टिप्पणियाँ (189)</h3>
+                <div class="add-comment">
+                    <textarea placeholder="अपनी टिप्पणी लिखें..."></textarea>
+                    <button class="btn primary-btn">पोस्ट करें</button>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://via.placeholder.com/50" alt="प्रतिक्रिया देने वाले का चित्र">
+                    </div>
+                    <div class="comment-content">
+                        <h4>विवेक पांडेय <span class="comment-date">1 सप्ताह पहले</span></h4>
+                        <p>दिनकर जी की रश्मिरथी महाभारत के कर्ण के चरित्र को बड़ी गहराई से चित्रित करती है। इसमें समाज की विषमताओं और संघर्ष का मार्मिक चित्रण है।</p>
+                        <div class="comment-actions">
+                            <a href="#"><i class="fas fa-heart"></i> पसंद (53)</a>
+                            <a href="#"><i class="fas fa-reply"></i> जवाब दें</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://via.placeholder.com/50" alt="प्रतिक्रिया देने वाले का चित्र">
+                    </div>
+                    <div class="comment-content">
+                        <h4>अर्चना सिंह <span class="comment-date">2 सप्ताह पहले</span></h4>
+                        <p>कर्ण के जीवन की व्यथा को दिनकर जी ने जिस अद्भुत शैली में प्रस्तुत किया है वह अतुलनीय है। यह काव्य हमें समाज की विडंबनाओं पर गंभीरता से सोचने पर मजबूर करता है।</p>
+                        <div class="comment-actions">
+                            <a href="#"><i class="fas fa-heart"></i> पसंद (38)</a>
+                            <a href="#"><i class="fas fa-reply"></i> जवाब दें</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="more-comments">
+                    <button class="btn secondary-btn">और टिप्पणियाँ देखें</button>
+                </div>
+            </div>
+            
+            <div class="related-poems">
+                <h3>संबंधित कविताएँ</h3>
+                <div class="poem-cards">
+                    <div class="poem-card">
+                        <h3>हुंकार</h3>
+                        <p class="poet-name">- रामधारी सिंह 'दिनकर'</p>
+                        <div class="poem-preview">
+                            <p>अब मनुज न रहेगा नर-पशु<br>
+                            अब न रहेगा वह अबोध;<br>
+                            पीड़ित मानव की आत्मा में<br>
+                            जन्मा है अब महाक्रोध!</p>
+                        </div>
+                        <div class="poem-meta">
+                            <span><i class="fas fa-heart icon-heart"></i> 724</span>
+                            <span><i class="fas fa-comment icon-comment"></i> 94</span>
+                            <a href="poem-detail.html" class="read-more">और पढ़ें...</a>
+                        </div>
+                    </div>
+                    
+                    <div class="poem-card">
+                        <h3>कुरुक्षेत्र</h3>
+                        <p class="poet-name">- रामधारी सिंह 'दिनकर'</p>
+                        <div class="poem-preview">
+                            <p>धर्म और अर्थ परस्पर विरोधी<br>
+                            ऐसा मानना भूल<br>
+                            धर्म अर्थ का विरोधी नहीं<br>
+                            अर्थ-लिप्सा है प्रतिकूल</p>
+                        </div>
+                        <div class="poem-meta">
+                            <span><i class="fas fa-heart icon-heart"></i> 698</span>
+                            <span><i class="fas fa-comment icon-comment"></i> 87</span>
+                            <a href="poem-detail.html" class="read-more">और पढ़ें...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>काव्य संगम</h2>
+                    <p>हिंदी कविता का मंच</p>
+                </div>
+                <div class="footer-links">
+                    <h3>त्वरित लिंक</h3>
+                    <ul>
+                        <li><a href="index.html">मुख्य पृष्ठ</a></li>
+                        <li><a href="popular-poems.html">लोकप्रिय कविताएँ</a></li>
+                        <li><a href="index.html#publish">प्रकाशित करें</a></li>
+                        <li><a href="index.html#discover">खोजें</a></li>
+                        <li><a href="beginner-poet.html">प्रारंभिक कवि</a></li>
+                        <li><a href="index.html#about">हमारे बारे में</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>हमें फॉलो करें</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 काव्य संगम - सभी अधिकार सुरक्षित</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Audio Elements -->
+    <audio id="meditation-sound" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Content for the second page (sarga) -->
+    <div id="poem-content-2" class="hidden-content">
+        <p>पुरुहूत-समान शौर्य है, दान कर्ण-सा गम्भीर अहो,<br>
+        अतुलित बल, केशव-समान अहं, रोम-रोम में धीर हो,<br>
+        मुकुलित ज्यों पंकज, यौवन-काल-प्रभा ने छू दिया,<br>
+        कवच-कुण्डल सहित वृषा के उर में अवतीर्ण हो।</p>
+
+        <p>केशव-अर्जुन संग अर्जुन से भी अधिक कुशल बाण में,<br>
+        पितृभक्त, अधिक राम से, करुणा-कल्पना यथावत है,<br>
+        धर्मनिष्ठ, अणुव्रत-धारी, वचन का पक्का-धनी,<br>
+        पुरुहूत-समान प्रत्यक्ष ही युवराज विवस्वत् है।</p>
+
+        <p>वास्तव में जगत का तात, कृपाधार, अनन्य प्रेम-पात्र,<br>
+        वज्र कठिन-चित, हेम-समान कोमलांग विरुद्धात्मक<br>
+        अन्तरंग का दाह अम्बुधि-सम गहन, नील नभ सदृश<br>
+        ऊर्ध्व प्रवृत्ति, अनन्त अनादि, अखिल एक आत्मक।</p>
+        
+        <p>परिचित आज प्रभा, अरुणोदय, स्वागत अरुण उदय,<br>
+        कर्ण दिनकर का स्वागत है, स्वागत है, स्वागत है,<br>
+        ज्योत्स्ना-वट-वल्लरी पल्लवित, पुष्पिता-फलमंडिता,<br>
+        आप अरुणोदय, दिनकर स्वागत है, स्वागत है।</p>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="poem-detail.js"></script>
+    <script src="poem-album.js"></script>
+</body>
+</html> 

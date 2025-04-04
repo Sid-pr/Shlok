@@ -2,6 +2,45 @@
 
 A responsive frontend website for Hindi poets to read and publish their work. The entire UI is in Hindi language with a color scheme inspired by Indian culture.
 
+
+**Interpretation of shlokas:**
+
+1. "चक्षुरध्ययनम्,
+
+वचनं श्रवणम्,
+
+सर्वमेककृतम्"
+
+Inference:
+>There must be a functionality to read the poem online.
+>also to save the poem offline.
+>To provide a basis to a beginner for advancing in the poetry.
+
+2.न च प्राण संज्ञो न वै पञ्चवायु: न वा सप्तधातुनर् वा पञ्चकोश:
+ न वाक्पािणपादौ न चोपस्थपायू िचदानन्द रूप:िशवोऽहम् िशवोऽहम् ॥  
+
+Inference:
+>This shlok interprets as the background of the website must be spiritually appealing like something as a light voilet background with stars animation
+>Also there must be the color combination representing the seven vital metals comprising the human body composition, five vital elements.
+>also teh website layout should provide the user a realisation of the concept of "aham bhramasmi".
+
+3. संग्रहकस्य यन्त्र,
+
+वर्तमानस्य गति,
+
+आधारस्य शिल्प
+
+Inference:
+>it infere that the website must provide the functionality to save the poem offline.
+
+11. अहं निर्विकल्पो निराकाररूपः।
+विभुत्वाच्च सर्वत्र सर्वेन्द्रियाणाम्॥
+न चासङ्गतं नैव मुक्तिर्न मेयः।
+चिदानन्दरूपः शिवोऽहम् शिवोऽहम्॥
+
+Inference:
+>this shlok inferce that the website layout must be visually appealing and provide a spiritual context to the reader.
+
 ## Features
 
 - **Fully Hindi UI**: The entire website interface is in Hindi language
@@ -53,3 +92,6 @@ The color scheme is inspired by Indian cultural elements:
 ---
 
 This project is a frontend-only implementation. For a full working application, backend services would need to be integrated. 
+
+
+
